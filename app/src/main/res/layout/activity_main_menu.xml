@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:fontFamily="@font/quicksand_regular"
+    android:background="#F3FEFF"
+    tools:context=".MainMenu">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/btnLogout"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:background="@drawable/btn_bg"
+            android:text="LOGOUT"
+            android:textSize="12dp"
+            android:layout_alignParentLeft="true"
+            android:textAlignment="center"
+            android:onClick="logout"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"/>
+        <Button
+            android:id="@+id/btnQuitGame"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:background="@drawable/btn_bg"
+            android:text="QUIT GAME"
+            android:layout_alignParentRight="true"
+            android:textSize="12dp"
+            android:onClick="quitGame"
+            android:textAlignment="center"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="5dp"/>
+    </RelativeLayout>
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="5dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/txtWelcome"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Welcome!"
+                android:textAlignment="center"
+                android:textSize="40dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:fontFamily="@font/quicksand_bold"
+                android:textColor="#000000" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="270dp"
+                android:layout_height="270dp"
+                android:layout_gravity="center"
+                android:layout_centerHorizontal="true"
+                app:srcCompat="@drawable/dog_house"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+            <Button
+                android:id="@+id/btnNewGame"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:text="  ⚾ NEW GAME"
+                android:onClick="newGame"
+                android:textAlignment="textStart"
+                android:layout_marginBottom="10dp"
+                android:fontFamily="@font/quicksand_bold"
+                android:background="@drawable/btn_green"
+                android:textSize="25dp"
+                android:layout_marginTop="15dp"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+            <Button
+                android:id="@+id/btnGameRecords"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:text="  🏆 GAME RECORDS"
+                android:textAlignment="textStart"
+                android:onClick="gameRecords"
+                android:layout_marginBottom="10dp"
+                android:fontFamily="@font/quicksand_bold"
+                android:background="@drawable/btn_red"
+                android:textSize="25dp"
+                android:layout_marginTop="15dp"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+            <Button
+                android:id="@+id/btnHowToPlay"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:text="  📕 HOW TO PLAY"
+                android:textAlignment="textStart"
+                android:onClick="howToPlay"
+                android:layout_marginBottom="10dp"
+                android:fontFamily="@font/quicksand_bold"
+                android:background="@drawable/btn_blue"
+                android:textSize="25dp"
+                android:layout_marginTop="15dp"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+            <Button
+                android:id="@+id/btnSettings"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:text="  ⚙️ SETTINGS"
+                android:onClick="settings"
+                android:layout_marginBottom="10dp"
+                android:fontFamily="@font/quicksand_bold"
+                android:background="@drawable/btn_yellow"
+                android:textAlignment="textStart"
+                android:textSize="25dp"
+                android:layout_marginTop="15dp"/>
+        </LinearLayout>
+    </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

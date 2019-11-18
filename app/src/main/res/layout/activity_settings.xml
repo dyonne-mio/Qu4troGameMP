@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:fontFamily="@font/quicksand_regular"
+    android:background="@drawable/settings_bg"
+    tools:context=".Settings">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageButton
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:clickable="true"
+            android:onClick="back"
+            android:scaleType="centerCrop"
+            android:src="@drawable/back_button_small"
+            android:background="#F3FEFF"
+            android:textAlignment="center" />
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/lemon_milk"
+                android:gravity="center"
+                android:text="SETTINGS"
+                android:textColor="#000000"
+                android:textSize="30dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/mainBody"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_marginTop="240dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/btnChangeUsername"
+                android:layout_width="250dp"
+                android:layout_height="80dp"
+                android:background="#00D7AF61"
+                android:clickable="true"
+                android:onClick="changeUsername"
+                android:scaleType="fitCenter"
+                android:src="@drawable/duct_tape_change_username"
+                android:textAlignment="center" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_marginTop="3dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/btnChangePassword"
+                android:layout_width="250dp"
+                android:layout_height="80dp"
+                android:background="#00D7AF61"
+                android:clickable="true"
+                android:onClick="changePassword"
+                android:scaleType="fitCenter"
+                android:src="@drawable/duct_tape_change_password"
+                android:textAlignment="center" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_marginTop="3dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/btnMusic"
+                android:layout_width="250dp"
+                android:layout_height="80dp"
+                android:background="#00D7AF61"
+                android:clickable="true"
+                android:onClick="toggleMusic"
+                android:scaleType="fitCenter"
+                android:src="@drawable/duct_tape_music_on"
+                android:textAlignment="center" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_marginTop="3dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/btnExit"
+                android:layout_width="250dp"
+                android:layout_height="80dp"
+                android:background="#00D7AF61"
+                android:clickable="true"
+                android:onClick="exit"
+                android:scaleType="fitCenter"
+                android:src="@drawable/duct_tape_exit"
+                android:textAlignment="center" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+
+</LinearLayout>
